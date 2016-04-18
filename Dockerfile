@@ -10,6 +10,7 @@ MAINTAINER Mark Fernandes mark.fernandes@ifr.ac.uk
 
 USER root
 RUN apt-get -qq update && apt-get upgrade -y && apt-get install -y software-properties-common python-pip
+RUN pip install ipython
 RUN pip install "ipython[all]" 
 RUN pip install bioblend
 
