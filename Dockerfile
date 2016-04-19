@@ -9,10 +9,10 @@ FROM ubuntu:14.04
 MAINTAINER Mark Fernandes mark.fernandes@ifr.ac.uk
 
 USER root
-RUN apt-get -qq update && apt-get upgrade -y && apt-get install -y software-properties-common python-pip ipython lynx
-RUN pip install jupyter
+RUN apt-get -qq update && apt-get upgrade -y && apt-get install -y software-properties-common python-pip ipython ipython-notebook lynx
+#RUN pip install jupyter
 #RUN pip install "ipython[all]"
 
-EXPOSE 8888
+EXPOSE :8888
 CMD ["bash"]
 
