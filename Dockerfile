@@ -9,9 +9,9 @@ FROM ubuntu:14.04
 MAINTAINER Mark Fernandes mark.fernandes@ifr.ac.uk
 
 USER root
-RUN apt-get -qq update && apt-get upgrade -y && apt-get install -y software-properties-common python-pip
-RUN pip install ipython
-RUN pip install "ipython[all]"
+RUN apt-get -qq update && apt-get upgrade -y && apt-get install -y software-properties-common python-pip ipython ipython-notebook
+#RUN pip install ipython
+#RUN pip install "ipython[all]"
 
 CMD ["bash"]
 
