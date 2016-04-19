@@ -14,5 +14,5 @@ RUN apt-get -qq update && apt-get upgrade -y && apt-get install -y software-prop
 #RUN pip install "ipython[all]"
 
 EXPOSE :8888
-CMD ["bash"]
+CMD ["ipython notebook --no-browser --port=8888 --ip=0.0.0.0"]
 
