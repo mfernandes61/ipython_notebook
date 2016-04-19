@@ -13,5 +13,6 @@ RUN apt-get -qq update && apt-get upgrade -y && apt-get install -y software-prop
 #RUN pip install ipython
 #RUN pip install "ipython[all]"
 
-CMD ["bash"]
+EXPOSE 8888
+CMD ["ipython notebook"]
 
