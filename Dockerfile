@@ -14,7 +14,7 @@ RUN apt-get -qq update && apt-get upgrade -y && apt-get install -y software-prop
 #RUN pip install "ipython[all]"
 
 #Launch the notebook server
-RUN ipython notebook --no-browser --port=8888 --ip=0.0.0.0
+RUN ipython notebook --no-browser --port=8888 --ip=0.0.0.0 &
 EXPOSE :8888
 CMD ["bash"]
 
