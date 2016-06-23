@@ -14,6 +14,7 @@ RUN apt-get -qq update && apt-get upgrade -y && apt-get install -y software-prop
 RUN mkdir /scripts
 ADD runner.sh /scripts/runner.sh
 RUN chmod +x /scripts/runner.sh
+
 #Launch the notebook server
 # RUN ipython notebook --no-browser --port=8888 --ip=0.0.0.0 &
 EXPOSE :8888
